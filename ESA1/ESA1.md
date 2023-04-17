@@ -294,3 +294,20 @@ Folgende Dinge konnten mit einem oberflächlichen Scan gefunden werden:
 5. Backups sind nicht öffentlich zugänglich (Gute Nachricht)
 
 Aggressivere Scans, oder ein Versuch eines Bruteforcings des Adminlogins per Wörterbuch o.Ä. wurde nicht durchgeführt.
+
+# Aufgabe e) 
+Mit "Google Hacking" ist gemeint, dass man die Google Suche zum Auffinden von Softwareinstallationen mit Schwachstellen nutzen kann. Eine Sammlung von Beispielen ist bei exploit-db.com/google-hacking-database/ zu finden. Erklären Sie anhand von drei selbstgewählten Beispielen, was man damit herausfinden kann.
+
+## Beispiel `ext:ini intext:env.ini`
+
+Sucht Dateien mit der Endung `.ini` und dem textinhalt `env.ini`. Hiermit kann man gängige Konfigurationsdateien finden, welche unter umständen wichtige informationen wie z.B. Passwörter enthalten. 
+
+## Beispiel `intitle:phaser inurl:/frameprop.htm`
+
+Findet PHASER Drucker deren Webinterface offen am Netz hängt
+
+Kann als sprungbrett in ein Netzwerk genutzt werden oder einfach nur für allgemeinen Schabernack.
+
+## Beispiel `intitle:"Bosch Security Systems" "LIVEPAGE" + "SETTINGS" -.net -.com`
+
+Findet diverse Bosh Security Systeme mit offenen Webcams, wie zum Beispiel ein System welches zum einem Flughafen in Mittelamerika gehört. 
